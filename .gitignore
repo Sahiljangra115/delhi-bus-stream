@@ -1,0 +1,6 @@
+.env
+data/
+.tools/
+.pydeps/
+__pycache__/
+.pytest_cache/

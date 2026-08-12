@@ -1,0 +1,22 @@
+# Alternative to the local Kafka tarball (scripts/kafka.sh). NOT started yet.
+# Redpanda single node, Kafka API on localhost:9092, so every script works unchanged.
+#   docker compose up -d
+#   docker compose exec redpanda rpk topic create vehicle_positions live bench -p 4
+#   docker compose down -v
+services:
+  redpanda:
+    image: docker.redpanda.com/redpandadata/redpanda:v24.3.1
+    command:
+      - redpanda
+      - start
+      - --mode=dev-container
+      - --smp=1
+      - --memory=1G
+      - --kafka-addr=internal://0.0.0.0:29092,external://0.0.0.0:9092
+      - --advertise-kafka-addr=internal://redpanda:29092,external://localhost:9092
+    ports:
+      - "9092:9092"
+    volumes:
+      - redpanda-data:/var/lib/redpanda/data
+volumes:
+  redpanda-data:
