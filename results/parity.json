@@ -1,0 +1,75 @@
+{
+  "batch_vs_stream": {
+    "rows_compared": 158120,
+    "rows_stream": 158120,
+    "dist_next_m": {
+      "nan_mismatch": 0,
+      "max_abs_diff": 0.0
+    },
+    "speed_5m": {
+      "nan_mismatch": 0,
+      "max_abs_diff": 0.0
+    },
+    "since_last_ping_s": {
+      "nan_mismatch": 0,
+      "max_abs_diff": 0.0
+    },
+    "delay_s": {
+      "nan_mismatch": 0,
+      "max_abs_diff": 0.0
+    },
+    "sched_eta_s": {
+      "nan_mismatch": 0,
+      "max_abs_diff": 0.0
+    }
+  },
+  "online_vs_offline_feast": {
+    "vehicles": 147,
+    "per_feature": {
+      "dist_next_m": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "speed_5m": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "speed_last": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "since_last_ping_s": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "headway_ahead_m": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "headway_behind_m": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "headway_time_s": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "delay_s": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "sched_eta_s": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "next_stop_idx": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "hour": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      }
+    }
+  }
+}

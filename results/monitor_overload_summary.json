@@ -1,0 +1,1 @@
+{"out": "results/dashboard_overload.html", "rows": 42, "span_s": 82.2, "lag_rows_without_commit": 7, "lag_rows_measured": 35, "max_lag": 132120, "final_lag": 0, "max_msg_rate": 22502.85, "msgs_total": 158120, "max_vehicles_seen": 96, "max_stale_frac": 0.6364}

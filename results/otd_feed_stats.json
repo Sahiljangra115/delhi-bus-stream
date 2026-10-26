@@ -1,0 +1,26 @@
+{
+  "source": "LIVE",
+  "polls": 9,
+  "span_s": 181.6,
+  "entities_per_poll_median": 4918,
+  "entity_rows": 44322,
+  "unique_pings": 33183,
+  "stale_repeat_frac": 0.2513,
+  "vehicles": 4997,
+  "routes": 1337,
+  "trips": 5089,
+  "frac_with_trip_id": 1.0,
+  "frac_in_delhi_bbox": 0.9974,
+  "update_gap_s": {
+    "p50": 22.0,
+    "p90": 65.0
+  },
+  "lag_at_first_sighting_s": {
+    "p50": 28.4,
+    "p90": 144.3
+  },
+  "lag_all_rows_s": {
+    "p50": 30.6,
+    "p90": 183.6
+  }
+}

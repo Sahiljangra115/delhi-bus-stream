@@ -1,0 +1,5 @@
+2026-10-27T16:59:19+05:30
+static GTFS: MISSING ['stops.txt', 'stop_times.txt', 'trips.txt', 'routes.txt'] in /home/ladliju/Developer/Portfolio/delhi-bus-stream/data/otd_gtfs
+realtime HTTP 200
+vehicles in snapshot: 4988
+exit=1

@@ -1,0 +1,268 @@
+start 2026-10-27T16:48:35+05:30  16:48:35 up 30 min,  1 user,  load average: 11.73, 8.59, 5.49
+routes=8 trips=683
+WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. To avoid issues it is best to use either, but not both.
+Created topic vehicle_positions.
+Created topic live.
+Created topic overload.
+Created topic bench.
+{"source": "SIMULATED", "published": 158120, "polls": 2880, "corrupt_polls": 0, "seconds": 5.71, "msgs_per_s": 27691.8}
+{"consumed": 158120, "feature_rows": 158120, "labelled": 151795, "stats": {"seen": 158120, "dup": 0, "unknown": 0, "off_route": 0}, "seconds": 7.91, "events_per_s": 19989.6}
+{
+  "label_vs_sim_truth": {
+    "n": 151795,
+    "coverage": 1.0,
+    "bias_s": -0.99,
+    "mae": 2.67,
+    "median": 2.28,
+    "p90": 4.96
+  },
+  "trip_holdout": {
+    "n_train": 105445,
+    "n_test": 46350,
+    "target": "label (15 m geofence crossing)",
+    "model": {
+      "mae": 11.22,
+      "median": 6.23,
+      "p90": 28.59
+    },
+    "static_schedule": {
+      "mae": 185.8,
+      "median": 127.7,
+      "p90": 410.24
+    },
+    "schedule_plus_current_delay": {
+      "mae": 18.68,
+      "median": 14.38,
+      "p90": 41.05
+    },
+    "last_speed": {
+      "mae": 126.11,
+      "median": 10.99,
+      "p90": 531.36
+    },
+    "speed_5m": {
+      "mae": 22.67,
+      "median": 14.55,
+      "p90": 52.98
+    },
+    "vs_sim_truth": {
+      "model": {
+        "mae": 11.33,
+        "median": 6.15,
+        "p90": 28.91
+      },
+      "static_schedule": {
+        "mae": 186.1,
+        "median": 128.9,
+        "p90": 410.38
+      },
+      "schedule_plus_current_delay": {
+        "mae": 18.47,
+        "median": 13.99,
+        "p90": 41.34
+      },
+      "last_speed": {
+        "mae": 125.62,
+        "median": 10.56,
+        "p90": 530.7
+      },
+      "speed_5m": {
+        "mae": 22.04,
+        "median": 13.79,
+        "p90": 52.4
+      }
+    },
+    "bunching": {
+      "n_test": 45459,
+      "base_rate": 0.21,
+      "auc_model": 0.975,
+      "auc_headway_rule": 0.859,
+      "precision_headway_rule": 0.817,
+      "recall_headway_rule": 0.8,
+      "ap_model": 0.897,
+      "precision_at_0_5": 0.819,
+      "recall_at_0_5": 0.841
+    }
+  },
+  "chronological": {
+    "n_train": 106259,
+    "n_test": 45536,
+    "target": "label (15 m geofence crossing)",
+    "model": {
+      "mae": 11.01,
+      "median": 6.1,
+      "p90": 27.99
+    },
+    "static_schedule": {
+      "mae": 162.48,
+      "median": 130.69,
+      "p90": 352.44
+    },
+    "schedule_plus_current_delay": {
+      "mae": 21.58,
+      "median": 18.54,
+      "p90": 44.36
+    },
+    "last_speed": {
+      "mae": 138.11,
+      "median": 9.84,
+      "p90": 556.3
+    },
+    "speed_5m": {
+      "mae": 21.97,
+      "median": 14.72,
+      "p90": 50.91
+    },
+    "vs_sim_truth": {
+      "model": {
+        "mae": 11.12,
+        "median": 6.04,
+        "p90": 28.47
+      },
+      "static_schedule": {
+        "mae": 162.27,
+        "median": 129.81,
+        "p90": 351.92
+      },
+      "schedule_plus_current_delay": {
+        "mae": 21.19,
+        "median": 18.0,
+        "p90": 44.32
+      },
+      "last_speed": {
+        "mae": 137.72,
+        "median": 9.34,
+        "p90": 555.96
+      },
+      "speed_5m": {
+        "mae": 21.6,
+        "median": 14.22,
+        "p90": 50.66
+      }
+    },
+    "bunching": {
+      "n_test": 45536,
+      "base_rate": 0.204,
+      "auc_model": 0.973,
+      "auc_headway_rule": 0.849,
+      "precision_headway_rule": 0.811,
+      "recall_headway_rule": 0.783,
+      "ap_model": 0.876,
+      "precision_at_0_5": 0.846,
+      "recall_at_0_5": 0.76
+    }
+  }
+}
+{"n": 200000, "bytes_per_msg": 143, "produce_msgs_per_s": 1043598, "consumed": 200000, "consume_msgs_per_s": 2146990}
+{"source": "SIMULATED", "published": 23509, "polls": 540, "corrupt_polls": 0, "seconds": 90.05, "msgs_per_s": 261.1}
+{"tag": "live", "messages": 23509, "scored": 23452, "batches": 544, "wall_s": 89.02, "msgs_per_s": 264.1, "scored_per_s": 263.5, "latency_ms": {"p50": 63.8, "p95": 94.1, "p99": 167.8, "max": 248.2}, "mean_stage_ms": {"feat": 2.37, "write": 19.48, "read": 3.57, "pred": 6.97}, "engine_stats": {"seen": 23509, "dup": 0, "unknown": 0, "off_route": 0}, "max_lag_msgs": 0, "lag_samples": [[0.2, 0], [8.3, 0], [16.6, 0], [25.0, 0], [33.2, 0], [41.4, 0], [49.6, 0], [58.0, 0], [66.2, 0], [74.5, 0], [82.9, 0], [91.2, 0]]}
+{"source": "SIMULATED", "published": 158120, "polls": 2880, "corrupt_polls": 0, "seconds": 7.91, "msgs_per_s": 19983.9}
+{"tag": "overload", "messages": 158120, "scored": 44798, "batches": 791, "wall_s": 58.1, "msgs_per_s": 2721.6, "scored_per_s": 771.1, "latency_ms": {"p50": 21427.4, "p95": 43280.9, "p99": 49023.6, "max": 50313.0}, "mean_stage_ms": {"feat": 16.31, "write": 22.29, "read": 6.92, "pred": 19.76}, "engine_stats": {"seen": 158120, "dup": 0, "unknown": 0, "off_route": 0}, "max_lag_msgs": 117320, "lag_samples": [[0.1, 1942], [5.3, 92045], [10.5, 107932], [15.7, 114320], [21.0, 101320], [26.2, 88320], [31.6, 75320], [36.9, 61720], [42.1, 47320], [47.2, 31520], [52.2, 20720], [57.3, 2520], [62.4, 0], [67.4, 0]]}
+{
+  "batch_vs_stream": {
+    "rows_compared": 158120,
+    "rows_stream": 158120,
+    "dist_next_m": {
+      "nan_mismatch": 0,
+      "max_abs_diff": 0.0
+    },
+    "speed_5m": {
+      "nan_mismatch": 0,
+      "max_abs_diff": 0.0
+    },
+    "since_last_ping_s": {
+      "nan_mismatch": 0,
+      "max_abs_diff": 0.0
+    },
+    "delay_s": {
+      "nan_mismatch": 0,
+      "max_abs_diff": 0.0
+    },
+    "sched_eta_s": {
+      "nan_mismatch": 0,
+      "max_abs_diff": 0.0
+    }
+  },
+  "online_vs_offline_feast": {
+    "vehicles": 147,
+    "per_feature": {
+      "dist_next_m": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "speed_5m": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "speed_last": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "since_last_ping_s": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "headway_ahead_m": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "headway_behind_m": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "headway_time_s": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "delay_s": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "sched_eta_s": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "next_stop_idx": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      },
+      "hour": {
+        "nan_mismatch": 0,
+        "max_abs_diff": 0.0
+      }
+    }
+  }
+}
+{"out": "results/dashboard_live.html", "rows": 54, "span_s": 113.0, "lag_rows_without_commit": 7, "lag_rows_measured": 47, "max_lag": 65.0, "final_lag": 0.0, "max_msg_rate": 365.88, "msgs_total": 23509, "max_vehicles_seen": 84, "max_stale_frac": 0.2262}
+{"out": "results/dashboard_overload.html", "rows": 42, "span_s": 82.2, "lag_rows_without_commit": 7, "lag_rows_measured": 35, "max_lag": 132120.0, "final_lag": 0.0, "max_msg_rate": 22502.85, "msgs_total": 158120, "max_vehicles_seen": 96, "max_stale_frac": 0.6364}
+WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. To avoid issues it is best to use either, but not both.
+Created topic otd_live.
+{"source": "LIVE", "published": 33183, "polls": 14, "corrupt_polls": 3, "seconds": 185.95, "msgs_per_s": 178.4}
+{
+  "source": "LIVE",
+  "polls": 9,
+  "span_s": 181.6,
+  "entities_per_poll_median": 4918,
+  "entity_rows": 44322,
+  "unique_pings": 33183,
+  "stale_repeat_frac": 0.2513,
+  "vehicles": 4997,
+  "routes": 1337,
+  "trips": 5089,
+  "frac_with_trip_id": 1.0,
+  "frac_in_delhi_bbox": 0.9974,
+  "update_gap_s": {
+    "p50": 22.0,
+    "p90": 65.0
+  },
+  "lag_at_first_sighting_s": {
+    "p50": 28.4,
+    "p90": 144.3
+  },
+  "lag_all_rows_s": {
+    "p50": 30.6,
+    "p90": 183.6
+  }
+}
+run_all exit=0
+end 2026-10-27T16:57:13+05:30  16:57:13 up 39 min,  1 user,  load average: 1.97, 4.45, 4.79

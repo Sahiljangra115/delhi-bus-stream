@@ -1,0 +1,1 @@
+{"out": "results/dashboard_live.html", "rows": 54, "span_s": 113.0, "lag_rows_without_commit": 7, "lag_rows_measured": 47, "max_lag": 65, "final_lag": 0, "max_msg_rate": 365.88, "msgs_total": 23509, "max_vehicles_seen": 84, "max_stale_frac": 0.2262}
